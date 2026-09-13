@@ -1,5 +1,7 @@
 #!/bin/bash
 
+SOCKET_PATH="${SOCKET_PATH:-"/var/run/cuos.sock"}"
+
 cuos_api() {
   local command="$1"
   local json_data="${2:-""}"
@@ -32,13 +34,9 @@ cuos_api() {
 }
 
 cuos_ready() {
-  echo "${1:-}" | jq -R '{"message": .}' | /app/cuos_api "report_app_ready" -
-
+  echo "${1:-}" | jq -R '{"message": .}' | cuos_api "report_app_ready" -
 }
 
 cuos_update() {
-  local config
-  config="$(cat)"
-
-  echo "${config}" | jq '{"config": .}' | /app/cuos_api.sh "update:json" -
+  jq '{"config": .}' | cuos_api "update:json" -
 }

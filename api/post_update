@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Run by CuOS inside this container after a successful update
+# (system/cuos/app-init.sh). Its exit code is ignored, and it is optional -
+# delete this file if you have nothing to do here.
+#
+# Use it for migrations or internal reconfiguration that must happen once, after
+# the new version is in place.
+
+exit 0

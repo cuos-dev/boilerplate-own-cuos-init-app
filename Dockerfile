@@ -17,7 +17,10 @@ LABEL dev.cuos.app_command="\
 #    --volume iac-volume:/volume \
 #    --volume iac-root-docker:/root/.docker \
 
-RUN apk add bash
+# socat and jq are what cuos_lib.sh talks to the CuOS API with.
+RUN apk add --no-cache bash socat jq
 
-COPY *.sh /app
-RUN chmod +x /app/*.sh /api/* || true
+COPY api/* /api/
+COPY *.sh /app/
+
+RUN chmod +x /app/*.sh /api/*

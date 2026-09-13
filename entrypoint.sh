@@ -7,8 +7,15 @@
 # shellcheck source=/dev/null
 source "/app/cuos_lib.sh"
 
+# Start your application here.
+
 cuos_ready "Web UI reachable via https://<MY IP>/"
 
 # To update CuOS call:
 # See: https://github.com/cuos-dev/cuos/blob/main/docs/common/cuos-api.md#api-commands-reference
 # echo '{...}' | cuos_update
+
+# CuOS runs this container with --restart always, so returning from here
+# restarts it in a loop. Replace this with your application's own foreground
+# process.
+sleep infinity
