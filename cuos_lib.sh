@@ -1,4 +1,5 @@
 #!/bin/bash
+# SPDX-License-Identifier: MIT-0
 
 SOCKET_PATH="${SOCKET_PATH:-"/var/run/cuos.sock"}"
 

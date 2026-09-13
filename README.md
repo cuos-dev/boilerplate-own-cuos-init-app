@@ -53,3 +53,14 @@ turning on — memory limit, read-only root, tmpfs mounts.
   — the label, the startup parameters, the update hook, the rollback rules
 - [CuOS API](https://github.com/cuos-dev/cuos/blob/HEAD/docs/common/cuos-api.md)
   — what the socket accepts
+
+---
+
+## License
+
+**MIT-0** — see [LICENSE.txt](LICENSE.txt). MIT without the attribution clause:
+copy this, change it, ship it, and you owe nothing — no notice to carry, no
+credit to give.
+
+That is deliberate. This repository exists to be taken. CuOS itself is
+Apache-2.0; only the boiler plates and the example are MIT-0.
