@@ -1,7 +1,7 @@
 # Boiler plate: your own CuOS Init App
 
 A starting point for the
-[Own CuOS Init App](https://github.com/cuos-dev/cuos/blob/development/docs/development-guide.md#own-cuos-init-app)
+[Own CuOS Init App](https://github.com/cuos-dev/cuos/blob/HEAD/docs/development-guide.md#own-cuos-init-app)
 level — you implement your own update mechanism or way of deployment, instead of
 letting CuOS IaC do it.
 
@@ -49,7 +49,7 @@ turning on — memory limit, read-only root, tmpfs mounts.
 
 ## Next
 
-- [Your CuOS Init App](https://github.com/cuos-dev/cuos/blob/development/docs/common/cuos-init-app.md)
+- [Your CuOS Init App](https://github.com/cuos-dev/cuos/blob/HEAD/docs/common/cuos-init-app.md)
   — the label, the startup parameters, the update hook, the rollback rules
-- [CuOS API](https://github.com/cuos-dev/cuos/blob/development/docs/common/cuos-api.md)
+- [CuOS API](https://github.com/cuos-dev/cuos/blob/HEAD/docs/common/cuos-api.md)
   — what the socket accepts
